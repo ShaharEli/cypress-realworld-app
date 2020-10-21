@@ -1,7 +1,7 @@
 import ChatBotMessage from "../../models/ChatBot/chatBotMessage";
-interface BotState {
-  messages: ChatBotMessage[];
-}
+import { history } from "../../utils/historyUtils";
+import BotState from "../../models/Chatbot/BotState";
+
 class ActionProvider {
   createChatBotMessage;
   setState;
@@ -21,9 +21,19 @@ class ActionProvider {
     this.updateChatbotState(greetingMessage);
   }
 
+  askAbout(subject: string) {
+    const question = this.createChatBotMessage(`Are you asking about ${subject}?`);
+    this.updateChatbotState(question);
+  }
+
+  startChat() {}
+
+  redirectTo(location: string) {
+    history.push(location);
+  }
+
   updateChatbotState(message: ChatBotMessage): void {
     this.setState((prevState: BotState) => {
-      console.log(typeof prevState, prevState);
       return {
         ...prevState,
         messages: [...prevState.messages, message],

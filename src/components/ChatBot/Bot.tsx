@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import config from "./config";
 import ActionProvider from "./ActionProvider";
 import Chatbot from "react-chatbot-kit";
-
 import MessageParser from "./MessageParser";
+import botAvatar from "./botAvatar.png";
+const botAvatarStyle = { width: 70, height: 70 };
 //taskkill /f /im node.exe
 const Bot: React.FC = () => {
+  const [showBot, setShowBot] = useState<boolean>(false);
   return (
     <div className="Bot">
-      <Chatbot config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
+      {showBot ? (
+        <>
+          <Chatbot config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
+          <img onClick={() => setShowBot((prev) => !prev)} src={botAvatar} style={botAvatarStyle} />
+        </>
+      ) : (
+        <img onClick={() => setShowBot((prev) => !prev)} src={botAvatar} style={botAvatarStyle} />
+      )}
     </div>
   );
 };
