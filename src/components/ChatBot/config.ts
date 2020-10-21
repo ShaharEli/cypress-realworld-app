@@ -1,5 +1,5 @@
 import { createChatBotMessage } from "react-chatbot-kit";
-import ChatBotMessage from "../../models/ChatBot/chatBotMessage";
+import { ChatBotMessage } from "../../models/ChatBot/BotStateSchema";
 interface Config {
   initialMessages: ChatBotMessage[];
 }

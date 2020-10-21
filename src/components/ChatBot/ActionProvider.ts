@@ -1,6 +1,5 @@
-import ChatBotMessage from "../../models/ChatBot/chatBotMessage";
 import { history } from "../../utils/historyUtils";
-import BotState from "../../models/Chatbot/BotState";
+import { BotState, ChatBotMessage } from "../../models/ChatBot/BotStateSchema";
 
 class ActionProvider {
   createChatBotMessage;
@@ -28,7 +27,9 @@ class ActionProvider {
 
   startChat() {}
 
-  redirectTo(location: string) {
+  redirectTo(location: string, msg: string) {
+    const message = this.createChatBotMessage(`Ok, redirecting you to the ${msg} page.`);
+    this.updateChatbotState(message);
     history.push(location);
   }
 
