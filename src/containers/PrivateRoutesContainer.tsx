@@ -14,6 +14,7 @@ import { AuthMachineContext, AuthMachineEvents } from "../machines/authMachine";
 import { SnackbarContext, SnackbarSchema, SnackbarEvents } from "../machines/snackbarMachine";
 import { useService } from "@xstate/react";
 import UserOnboardingContainer from "./UserOnboardingContainer";
+import Bot from "components/ChatBot/Bot";
 
 export interface Props {
   isLoggedIn: boolean;
@@ -43,6 +44,7 @@ const PrivateRoutesContainer: React.FC<Props> = ({
         bankAccountsService={bankAccountsService}
       />
       <Switch>
+        <Bot />
         <PrivateRoute isLoggedIn={isLoggedIn} exact path={"/(public|contacts|personal)?"}>
           <TransactionsContainer />
         </PrivateRoute>

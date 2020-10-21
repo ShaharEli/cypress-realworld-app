@@ -73,6 +73,7 @@
     "nodemon": "2.0.4",
     "passport": "0.4.1",
     "passport-local": "1.0.0",
+    "react-chatbot-kit": "^1.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-infinite-calendar": "2.3.1",
