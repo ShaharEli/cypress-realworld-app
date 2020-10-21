@@ -150,6 +150,7 @@ export const performSearch = (items: object[], options: {}, query: string) =>
   flow(
     cleanSearchQuery,
     setupSearch(items, options),
+    //@ts-ignore
     map((result) => result.item)
   )(query);
 
