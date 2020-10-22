@@ -6,6 +6,13 @@ import MessageParser from "./MessageParser";
 import botAvatar from "./botAvatar.png";
 const botAvatarStyle = { width: 70, height: 70, cursor: "pointer" };
 //taskkill /f /im node.exe
+// {
+//     transactionType: 'payment',
+//     amount: 3500,
+//     description: 'lml;m',
+//     senderId: 't45AiwidW',
+//     receiverId: 'qywYp6hS0U'
+//   }
 const Bot: React.FC = () => {
   const [showBot, setShowBot] = useState<boolean>(false);
   return (

@@ -11,7 +11,7 @@
       "phoneNumber": "625-316-9882",
       "avatar": "https://avatars.dicebear.com/api/human/t45AiwidW.svg",
       "defaultPrivacyLevel": "public",
-      "balance": 168137,
+      "balance": 0,
       "createdAt": "2019-08-27T23:47:05.637Z",
       "modifiedAt": "2020-05-21T11:02:22.857Z"
     },
@@ -26,7 +26,7 @@
       "phoneNumber": "537-041-4355",
       "avatar": "https://avatars.dicebear.com/api/human/qywYp6hS0U.svg",
       "defaultPrivacyLevel": "private",
-      "balance": 101805,
+      "balance": 451805,
       "createdAt": "2019-09-09T13:48:45.489Z",
       "modifiedAt": "2020-05-21T02:34:01.483Z"
     },
@@ -9855,6 +9855,18 @@
       "requestResolvedAt": "",
       "createdAt": "2019-06-27T22:24:04.794Z",
       "modifiedAt": "2020-05-21T04:58:44.494Z"
+    },
+    {
+      "id": "YDZqIAMu-",
+      "uuid": "cf0dec4c-a0d3-4798-968d-eeac80d7647c",
+      "amount": 350000,
+      "description": "lml;m",
+      "receiverId": "qywYp6hS0U",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2020-10-22T14:35:18.005Z",
+      "modifiedAt": "2020-10-22T14:35:18.005Z"
     }
   ],
   "likes": [
@@ -10431,6 +10443,16 @@
       "isRead": false,
       "createdAt": "2019-10-19T20:50:49.292Z",
       "modifiedAt": "2020-05-21T21:00:50.192Z"
+    },
+    {
+      "id": "O4OQMdaiGP",
+      "uuid": "a98034c5-9390-432c-84a3-b608314f924a",
+      "userId": "qywYp6hS0U",
+      "transactionId": "YDZqIAMu-",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2020-10-22T14:35:18.046Z",
+      "modifiedAt": "2020-10-22T14:35:18.046Z"
     }
   ],
   "banktransfers": [
@@ -10983,6 +11005,16 @@
       "transactionId": "jtdpSmWcsJxk",
       "createdAt": "2019-10-10T05:09:20.517Z",
       "modifiedAt": "2020-05-21T12:24:00.749Z"
+    },
+    {
+      "id": "Wo1HHRSf0J",
+      "uuid": "14fa2027-6401-45e4-8b28-565cc9069979",
+      "userId": "t45AiwidW",
+      "amount": 181863,
+      "transactionId": "YDZqIAMu-",
+      "type": "withdrawal",
+      "createdAt": "2020-10-22T14:35:18.012Z",
+      "modifiedAt": "2020-10-22T14:35:18.012Z"
     }
   ]
 }

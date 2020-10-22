@@ -1,5 +1,6 @@
 import { history } from "../../utils/historyUtils";
 import { BotState, ChatBotMessage } from "../../models/ChatBot/BotStateSchema";
+import { httpClient } from "../../utils/asyncUtils";
 
 class ActionProvider {
   createChatBotMessage;
@@ -25,7 +26,7 @@ class ActionProvider {
     this.updateChatbotState(question);
   }
 
-  startChat() {}
+  makeTransaction(sendingUserId: number, recievingUserId: number, amount: number) {}
 
   redirectTo(location: string, msg: string) {
     const message = this.createChatBotMessage(`Ok, redirecting you to the ${msg} page.`);
