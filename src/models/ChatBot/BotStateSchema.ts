@@ -5,6 +5,15 @@ export interface ChatBotMessage {
   type: "bot";
 }
 
+interface Transaction {
+  transactionType: string;
+  amount: number;
+  description: string;
+  senderId: string;
+  receiverId: string;
+}
 export interface BotState {
   messages: ChatBotMessage[];
+  transactionData: Transaction;
+  transactionSteps: number;
 }

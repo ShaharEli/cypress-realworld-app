@@ -140,7 +140,6 @@ router.post(
   validateMiddleware(isTransactionPayloadValidator),
   (req, res) => {
     const transactionPayload = req.body;
-    console.log(req.body);
 
     const transactionType = transactionPayload.transactionType;
 
